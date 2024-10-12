@@ -1,0 +1,18 @@
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean id="dev" class="org.example.Dev">
+        <property name="comp" ref="laptop"/>
+    </bean>
+
+    <bean id="desk1" class="org.example.Desktop">
+    </bean>
+
+    <bean id="laptop" class="org.example.Laptop">
+    </bean>
+</beans>
